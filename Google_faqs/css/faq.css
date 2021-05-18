@@ -1,0 +1,220 @@
+/* Accordion Elements Styling*/
+.accordion {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, .125);
+  margin: 1rem 0;
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 6rem;
+  line-height: 1.25rem;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header i {
+  font-size: 1.2rem;
+  position: absolute;
+  right: 1rem;
+  color: #1a73e8;
+}
+
+.accordion-item-header.active i {
+  transform: rotate(180deg);
+}
+
+.accordion-item-body {
+  display: none;
+  font-size: 14px;
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 2px solid #1a73e8;
+}
+
+.accordion-item-header.active+.accordion-item-body {
+  display: block;
+}
+
+.accordion-item-body-content a {
+  text-decoration: none;
+  color: #1a73e8;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/*Footer Styling Elements*/
+footer {
+  height: 80px;
+}
+
+.footer-image img {
+  width: 95px;
+  height: 35px;
+  float: left;
+  padding: 0 10px 0 10px;
+}
+
+.footer-main-links .footer-link {
+  color: black;
+  text-decoration: none;
+  padding: 3px 20px 0 15px;
+  float: left;
+}
+
+.footer-link-right a,
+.footer-language {
+  color: black;
+  padding: 3px 10px 0 30px;
+  float: left;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+
+/* Header Element Styling*/
+header img {
+  width: 100px;
+  height: 50px;
+  padding: 20px 0 2px 0;
+}
+
+header p {
+  padding: 12px 0 5px 3px;
+  font-size: 25px;
+}
+
+.header_logos,
+.brand-logo-desktop {
+  display: flex;
+
+}
+
+.hide {
+  display: none !important;
+}
+
+/* Hero Image and Text Styling*/
+.hero-image {
+  background: url("../images/faq_image.jpg");
+  height: 300px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+  height: 100%;
+  color: #fff;
+}
+
+/*Annimation given to the sidebar*/
+#main {
+  transition: margin-left .5s;
+}
+
+/*Navbar Styling Elements*/
+.nav-link {
+  font-size: 14px;
+  font-weight: 400;
+  height: 48px;
+}
+
+.navbar-brand {
+  border-bottom: 1px solid;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.navbar-brand p {
+  padding: 0 0 5px 3px;
+  font-size: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: 50px;
+  padding: 0 0 2px 0;
+  display: inline-block;
+}
+
+
+
+/*Styling for the sidebar Elements*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-top: 20px;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: black;
+}
+
+.sidebar-openbtn {
+  font-size: 15px;
+  cursor: pointer;
+  background-color: white;
+  margin: 20px;
+  border: none;
+}
+
+
+/* Media Queries for Desktops,Laptops and above devices  */
+@media (min-width: 993px) {
+  .sidebar-openbtn {
+    display: none;
+  }
+}
+
+/* Media Queries for Tablets and Mobile Devices  */
+@media(max-width:992px) {
+  .expanded-navbar {
+    display: none;
+  }
+}
+
+/*Media Queries for the sidebar in Mobile Devices*/
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+}
